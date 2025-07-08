@@ -12,7 +12,15 @@ def procesar_pdf(ruta_pdf, ruta_salida="salida"):
     if not os.path.exists(ruta_salida):
         os.makedirs(ruta_salida)
 
-    reader_ocr = easyocr.Reader(['es'], gpu=False)
+    reader_ocr = easyocr.Reader(
+        ['es']
+        gpu=False,
+        model_storage_directory='C:\\Users\mpure\Documents\ProyectoSSADE\SSADE_SUNARP\models'
+        download_enabled=False
+    )
+
+    #reader_ocr = easyocr.Reader(['es'], gpu=False)
+
     imagenes = convert_from_path(ruta_pdf, dpi=300)
     lector_pdf = PdfReader(ruta_pdf)
 
