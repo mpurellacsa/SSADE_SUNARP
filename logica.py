@@ -21,7 +21,7 @@ def procesar_pdf(ruta_pdf, ruta_salida="salida"):
     reader_ocr = easyocr.Reader(
         ['es'],
         gpu=False,
-        model_storage_directory='C:\\Users\mpure\Documents\ProyectoSSADE\SSADE_SUNARP\models',
+        model_storage_directory='C:\\Users\\mpure\Documents\ProyectoSSADE\SSADE_SUNARP\models',
         download_enabled=False
     )
 
