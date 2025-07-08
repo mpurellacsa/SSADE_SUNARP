@@ -89,6 +89,21 @@ def procesar_pdf(ruta_pdf, ruta_salida="salida"):
             i += 2
             continue
 
+        if "SOLICITUD DE RECT" in texto and ultimo_titulo:
+            guardar("solicitudrectificacion")
+            i += 2
+            continue
+
+        if "CERTIFICADO DE INSCRIP" in texto and ultimo_titulo:
+            guardar("certificadoinscripcion")
+            i += 2
+            continue
+        
+        if "COBRANZA COACTIVA" in texto and ultimo_titulo:
+            guardar("desistimiento")
+            i += 2
+            continue
+
 
 
 
