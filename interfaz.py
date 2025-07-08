@@ -4,13 +4,14 @@ from logica import procesar_pdf
 import os
 
 def iniciar_interfaz():
+    
     ventana = tk.Tk()
     ventana.title("ESCANEADOR")
     ventana.geometry("420x250")
 
     ruta_pdf = tk.StringVar()
     ruta_salida = tk.StringVar()
-    ruta_salida.set("salida")  # valor por defecto
+    ruta_salida.set("salida")  
 
     def seleccionar_pdf():
         archivo = filedialog.askopenfilename(title="Selecciona PDF", filetypes=[("PDF", "*.pdf")])

@@ -5,7 +5,6 @@ import easyocr
 from pdf2image import convert_from_path
 from PyPDF2 import PdfReader, PdfWriter
 
-#Mis librerias
 
 def procesar_pdf(ruta_pdf, ruta_salida="salida"):
     print(f"📄 Procesando PDF: {ruta_pdf}")
@@ -76,7 +75,12 @@ def procesar_pdf(ruta_pdf, ruta_salida="salida"):
             i += 2
             continue
 
+
+
+
+
         
+
 
         i += 2
 
