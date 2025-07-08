@@ -10,3 +10,14 @@ Sistema de Separación Automática de Documentos Escaneados - SUNARP
 3. Conexión a internet
 
 
+----------
+Codigo git
+
+git add .
+git commit -m "mensaje"
+git push origin main
+
+git pull origin main
+
+-------
+
