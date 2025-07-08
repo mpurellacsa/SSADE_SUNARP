@@ -4,6 +4,12 @@ import numpy as np
 import easyocr
 from pdf2image import convert_from_path
 from PyPDF2 import PdfReader, PdfWriter
+import ssl
+import urllib.request
+
+ssl._create_default_https_context = ssl._create_unverified_context
+
+
 
 
 def procesar_pdf(ruta_pdf, ruta_salida="salida"):
