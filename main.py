@@ -3,3 +3,6 @@ from interfaz import iniciar_interfaz  #importa la funcion de iniciar interfaz d
 if __name__ == "__main__":
     iniciar_interfaz()          #funcion iniciar interfaz#
 
+#menu principal
+
+
