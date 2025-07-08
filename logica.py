@@ -7,7 +7,7 @@ from PyPDF2 import PdfReader, PdfWriter
 import ssl
 import urllib.request
 
-ssl._create_default_https_context = ssl._create_unverified_context
+#ssl._create_default_https_context = ssl._create_unverified_context
 
 
 
